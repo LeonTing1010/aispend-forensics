@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect width="128" height="128" rx="24" fill="#1a1a2e"/>
+  
+  <!-- Dollar sign -->
+  <text x="64" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="72" font-weight="700" fill="#00d4aa" text-anchor="middle">$</text>
+  
+  <!-- Magnifying glass (forensics) -->
+  <circle cx="90" cy="38" r="18" fill="none" stroke="#ff6b6b" stroke-width="6"/>
+  <line x1="102" y1="50" x2="118" y2="66" stroke="#ff6b6b" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Small chart bars -->
+  <rect x="20" y="70" width="8" height="20" rx="2" fill="#4ecdc4"/>
+  <rect x="32" y="58" width="8" height="32" rx="2" fill="#4ecdc4"/>
+  <rect x="44" y="66" width="8" height="24" rx="2" fill="#4ecdc4"/>
+</svg>
