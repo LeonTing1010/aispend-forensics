@@ -13,8 +13,6 @@ All data is stored locally on your device using Chrome's `storage` API. No data 
 | Permission | Purpose | Justification |
 |------------|---------|---------------|
 | **storage** | Save spend data locally | Required to store extracted spend data between browser sessions |
-| **notifications** | Alert on spending anomalies | Optional feature for v0.3+ anomaly detection |
-| **activeTab** | Read current page data | Required to access AI tool dashboard pages for data extraction |
 | **host permissions** | Access AI tool websites | Required to read spend data from cursor.com, claude.ai, and replit.com |
 
 ### Remote Code

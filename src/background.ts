@@ -11,9 +11,6 @@ interface SpendData {
   error?: string;
 }
 
-// Store last known values for anomaly detection (v0.3)
-const lastKnownSpend: Map<string, number> = new Map();
-
 /**
  * Handle messages from content scripts
  */
@@ -25,11 +22,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     };
 
     console.log(`[AI-spend BG] Data updated for ${provider}:`, data);
-
-    // Store for anomaly detection (v0.3)
-    if (!data.error) {
-      lastKnownSpend.set(provider, data.amount);
-    }
 
     // Update extension icon badge with total
     updateBadge();
@@ -115,19 +107,6 @@ chrome.runtime.onInstalled.addListener((details) => {
  */
 chrome.storage.onChanged.addListener((changes, area) => {
   if (area === "local") {
-    updateBadge();
-  }
-});
-
-/**
- * Periodic sync (every 15 minutes)
- * This ensures data stays fresh even if user doesn't revisit pages
- */
-chrome.alarms?.create("sync", { periodInMinutes: 15 });
-
-chrome.alarms?.onAlarm.addListener((alarm) => {
-  if (alarm.name === "sync") {
-    console.log("[AI-spend BG] Periodic sync check");
     updateBadge();
   }
 });

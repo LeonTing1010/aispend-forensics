@@ -40,7 +40,6 @@ Or install manually from [latest release](https://github.com/LeonTing1010/aispen
 
 ## Roadmap
 
-- v0.3: Anomaly detection (get notified of unusual spending spikes)
 - v0.5: Detailed forensics (per-feature attribution, cost breakdown)
 - v1.0: Billing bug detection
 

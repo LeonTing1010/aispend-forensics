@@ -35,7 +35,6 @@ Track your AI tool spending across Cursor, Claude, and Replit. Know where your m
 Simply visit your AI tool dashboard pages while the extension is installed. The extension reads the usage data displayed on the page and stores it locally for easy access via the popup.
 
 **Roadmap:**
-- v0.3: Anomaly detection (get notified of unusual spending spikes)
 - v0.5: Detailed forensics (per-feature attribution, cost breakdown)
 - v1.0: Billing bug detection
 

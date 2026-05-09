@@ -4,9 +4,7 @@
   "version": "0.1.2",
   "description": "Track and analyze your AI tool spending. Know where your money goes.",
   "permissions": [
-    "storage",
-    "notifications",
-    "activeTab"
+    "storage"
   ],
   "host_permissions": [
     "*://*.cursor.com/*",
