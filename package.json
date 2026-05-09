@@ -4,7 +4,7 @@
   "description": "Chrome extension for AI tool spend tracking and forensics",
   "scripts": {
     "build": "tsc && npm run copy-assets",
-    "copy-assets": "cp manifest.json dist/ && cp popup.html dist/ && cp styles.css dist/ && cp *.png dist/ 2>/dev/null || true",
+    "copy-assets": "cp manifest.json dist/ && cp popup.html dist/ && cp *.png dist/ 2>/dev/null || true",
     "dev": "tsc --watch",
     "lint": "eslint src/**/*.ts",
     "clean": "rm -rf dist"
